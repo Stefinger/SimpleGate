@@ -105,7 +105,7 @@ section h3{
 header {
     position: relative;
     width: 100%;
-    top: -90px;
+    top: -80px;
     z-index: 1;
     background-image: url("/images/uvod.jpg"); 
     background-size: cover;
@@ -116,7 +116,7 @@ header {
 
 .header-container{
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Heebo', sans-serif;
     color: #ffffff;
     letter-spacing: 0.8px;
     padding: 240px;
@@ -129,6 +129,7 @@ header {
 }
 
 #learn-button{
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     position: relative;
     background-color: rgb(40, 126, 254);
@@ -202,8 +203,8 @@ header {
     background-size: cover;
     min-height: 700px;
     color: #fff;
-    padding: 100px;
-    width: 100%;
+    padding: 100px 0px;
+    max-width: 100%;
 }
 
 .how-works-box{
@@ -418,17 +419,17 @@ header {
 /* #################################### REGISTER NOW #################################### */
 
 .register-now{
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     color: #fff;
     background: url(images/backgroun_office.jpg);
     background-size: cover;
-    object-fit: cover; 
+    background-position: center;
     position: fixed;
     left: 0;
     top: 0;
     border-top: 2px solid #555;
-    z-index: -22;
+    z-index: -2;
 }
 
 .register-box{
@@ -476,11 +477,14 @@ header {
     border: 0;
 }
 
+.accordion-body{
+    color: #959292;
+}
+
 /* #################################### FOOTER #################################### */
 
 footer{
     min-height: 300px;
-    width: 100%;
     color: #fff;
 }
 
@@ -502,21 +506,21 @@ footer a{
 
 /* #################################### MEDIA QUERY #################################### */
 
-
-@media (min-width: 300px) {
+@media (max-width: 300px) {
 
     #learn-button{
        width: 130px;
     }
 
-    .right-box{
-        margin: 0 30px;
+    .left-box #signIn-button{
+        max-width: 200px;
+        font-size: 11px;
     }
 
-    .left-box{
-        margin: 0 30px;
+    .left-box p{
+        max-width: 250px;
+        font-size: small;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -539,16 +543,6 @@ footer a{
     .left-box p{
         max-width: 300px;
         font-size: small;
-        height: 100px;
-    }
-
-    .left-box{
-        margin: 0 30px;
-    }
-
-    .right-box{
-        max-width: 200px;
-        margin: 0 30px;
     }
 
     .right-box span{
@@ -564,6 +558,10 @@ footer a{
         font-size: small;
     }
 
+    footer{
+        padding-top: 200px;
+        padding-top: 200px;
+    }
 }
 
   @media (max-width: 992px) {

@@ -165,7 +165,7 @@ gsap.to(".choice-box-3",{
  gsap.to(".how-works-box-1",{
     scrollTrigger: {
         triger: ".how-works-box-1",
-        start:"1300 center",
+        start:"1500 center",
         end:"1900 center",
         toggleActions: "play none", 
     },
@@ -177,7 +177,7 @@ gsap.to(".choice-box-3",{
  gsap.to(".how-works-box-2",{
     scrollTrigger: {
         triger: ".how-works-box-2",
-        start:"1300 center",
+        start:"1500 center",
         end:"1900 center",
         toggleActions: "play none", 
     },
